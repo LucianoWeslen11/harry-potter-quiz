@@ -49,7 +49,7 @@ export default function Home() {
         </Widget>
         <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/lucianoweslen11"/>
+      <GitHubCorner projectUrl="https://github.com/lucianoweslen11/harry-potter-quiz"/>
     </QuizBackground>
   )
 }
