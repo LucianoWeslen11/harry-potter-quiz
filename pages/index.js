@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import styled from 'styled-components';
 import db from '../db.json';
 import Widget from '../src/components/Widget';
@@ -11,6 +12,9 @@ const QuizContainer = styled.div`
   max-width: 350px;
   padding-top: 45px;
   margin: auto 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   @media screen and (max-width: 500px){
     margin: auto;
     padding: 15px;
@@ -20,6 +24,13 @@ const QuizContainer = styled.div`
 export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
+      <Head>
+        <title>Harry Potter Quiz</title>
+
+        <meta charSet="utf-8" />
+        <meta property="og:image" content={db.bg}/>
+        <meta name="theme-color" content="#cfb421"/>
+      </Head>
       <QuizContainer>
         <QuizLogo />
         <Widget>
