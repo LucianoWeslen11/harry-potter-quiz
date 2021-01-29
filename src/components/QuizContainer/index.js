@@ -8,8 +8,9 @@ const QuizContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  @media screen and (max-width: 500px){
+  @media screen and (max-width: 600px){
     margin: auto;
+    max-width: 400px;
     padding: 15px;
   }
 `;

@@ -47,7 +47,8 @@
     "colors": {
       "primary": "#2075CF",
       "secondary": "#cfb421",
-      "mainBg": "#303467",
+      "third": "#303467",
+      "mainBg": "#23264A",
       "contrastText": "#FFFFFF",
       "wrong": "#CF4020",
       "success": "#75CF20"

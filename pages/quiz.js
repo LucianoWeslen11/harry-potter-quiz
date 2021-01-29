@@ -164,7 +164,7 @@ const screenStates = {
 }
 
 export default function QuizPage() {
-  const [screenState, setScreenState] = React.useState(screenStates.RESULT);
+  const [screenState, setScreenState] = React.useState(screenStates.LOADING);
   
   const [results, setResults] = React.useState([]);
 
