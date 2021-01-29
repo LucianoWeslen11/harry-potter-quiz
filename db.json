@@ -4,25 +4,39 @@
   "description": "Será que você é um PotterHead de verdade?",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
-      "description": "Essa é pra aquecer",
+      "image": "https://media.tenor.com/images/ea09826248453627496064fc4b6c9d5f/tenor.gif",
+      "title": "Como Harry consegue respirar debaixo d'água durante a segunda tarefa do Torneio Tribruxo?",
+      "description": "",
       "answer": 2,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "Ele transfigura em um tubarão",
+        "Ele beija uma sereia",
+        "Ele come gillyweed",
+        "Ele executa um charme de cabeça de bolha"
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
-      "answer": 0,
+      "image": "https://j.gifs.com/Keqq41.gif",
+      "title": "Qual é o nome da loja de piadas de Fred e Jorge?",
+      "description": "",
+      "answer": 1,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+         "Empório de Piadas Weasley",
+         "Weasleys Wizard Wheezes",
+         "Fred e George's Wonder Emporium",
+         "Loja de piadas de Zonko"
+      ]
+    },
+    {
+      "image": "https://br.jetss.com/wp-content/uploads/2018/06/harry-potter-quadribol-1000x544.jpg",
+      "title": "Qual é o modelo da primeira vassoura que Harry já recebeu?",
+      "description": "",
+      "answer": 1,
+      "alternatives": [
+         "Cleansweep One",
+         "Nimbus 2000",
+         "Nimbus 2001",
+         "Firebolt"
       ]
     }
   ],
@@ -31,12 +45,12 @@
   ],
   "theme": {
     "colors": {
-      "primary": "#cfb421",
-      "secondary": "#d0a307",
+      "primary": "#2075CF",
+      "secondary": "#cfb421",
       "mainBg": "#303467",
       "contrastText": "#FFFFFF",
-      "wrong": "#FF5722",
-      "success": "#4CAF50"
+      "wrong": "#CF4020",
+      "success": "#75CF20"
     },
     "borderRadius": "4px"
   }

@@ -1,4 +1,6 @@
 // src/components/QuizBackground/index.js
+/* eslint-disable */
+import React from 'react';
 import styled from 'styled-components';
 
 const QuizBackground = styled.div`
