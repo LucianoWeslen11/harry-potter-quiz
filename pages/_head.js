@@ -17,7 +17,7 @@ export default function HeadConfig() {
       <meta property="og:image" content={bg} />
 
       <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content="https://flash-quiz-next.davidlpc1.vercel.app/" />
+      <meta property="twitter:url" content="https://hpquiz.lucianoweslen.dev/" />
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={description} />
       <meta property="twitter:image" content={bg} />
