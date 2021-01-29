@@ -28,7 +28,7 @@
       ]
     },
     {
-      "image": "https://br.jetss.com/wp-content/uploads/2018/06/harry-potter-quadribol-1000x544.jpg",
+      "image": "https://ahaslides.com/wp-content/uploads/2020/05/original.gif",
       "title": "Qual é o modelo da primeira vassoura que Harry já recebeu?",
       "description": "",
       "answer": 1,
@@ -38,10 +38,51 @@
          "Nimbus 2001",
          "Firebolt"
       ]
+    },
+    {
+      "image": "https://asociedadebruxa.weebly.com/uploads/4/0/1/9/401983/2857750_orig.gif",
+      "title": "Os três tipos de bolas usadas no Quadribol são Balaços, Pomos e...",
+      "description": "",
+      "answer": 0,
+      "alternatives": [
+         "Goles",
+         "Wiffles0",
+         "Boccis",
+         "Foozles"
+      ]
+    },
+    {
+      "image": "https://super.abril.com.br/wp-content/uploads/2018/07/55b16f7382bee13dc902115bharry-potter-carta-hogwarts1.gif",
+      "title": "Quem roubou as cartas de Rony e Hermione de Harry no início de 'Harry Potter e a Câmara Secreta'?",
+      "description": "",
+      "answer": 2,
+      "alternatives": [
+         "Dumbledore",
+         "Draco Malfoy",
+         "Dobby",
+         "Os Dursleys"
+      ]
+    },
+    {
+      "image": "https://pa1.narvii.com/6305/c3164ebfb29d0e05068dc502b43563e5e22c31b5_00.gif",
+      "title": "Quem deu a Harry Potter a capa da invisibilidade?",
+      "description": "",
+      "answer": 1,
+      "alternatives": [
+        "Olho-Tonto Moody",
+        "Dumbledore",
+        "Professor Snape",
+        "Dobby"
+      ]
     }
   ],
   "external": [
-    ""
+    "https://quiz-imersao-react.olucasalves.vercel.app/",
+    "https://flash-quiz-next.davidlpc1.vercel.app/",
+    "https://breaking-bad-quiz.eliasnepo.vercel.app/",
+    "https://chessquiz-alura.leo0liveira.vercel.app/",
+    "https://aluraquiz-halloween.lucaskuhn.vercel.app/",
+    "https://aluraquizpokemon.cesarrobertopg.vercel.app/"
   ],
   "theme": {
     "colors": {

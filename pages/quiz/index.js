@@ -1,41 +1,55 @@
 /* eslint-disable */
 import React from 'react';
 
-import QuizLogo from '../src/components/QuizLogo';
-import QuizBackground from '../src/components/QuizBackground';
-import QuizContainer from '../src/components/QuizContainer';
-import Widget from '../src/components/Widget';
-import AlternativesForm from '../src/components/AlternativesForm';
-import Button from '../src/components/Button';
+import { motion } from 'framer-motion';
+
+import QuizBackground from '../../src/components/QuizBackground';
+import QuizContainer from '../../src/components/QuizContainer';
+import Widget from '../../src/components/Widget';
+import AlternativesForm from '../../src/components/AlternativesForm';
+import Button from '../../src/components/Button';
+import BackLinkArrow from '../../src/components/BackLinkArrow';
 import ContentLoader from "react-content-loader";
 
-import db from '../db.json';
+import db from '../../db.json';
 
 export const Loader = (props) => (
   <Widget>
-    <Widget.Header />
     <ContentLoader
       speed={2}
       width={400}
-      height={360}
-      viewBox="0 0 400 360"
+      height={600}
+      viewBox="400 360"
       backgroundColor="rgba(32, 117, 207, 0.4)"
       foregroundColor="rgba(207,180,33, 0.4)"
       {...props}
     >
-      <rect x="20" y="30" rx="0" ry="0" width="308" height="39" />
-      <rect x="20" y="90" rx="0" ry="0" width="167" height="13" />
-      <rect x="40" y="120" rx="0" ry="0" width="269" height="44" />
-      <rect x="40" y="170" rx="0" ry="0" width="268" height="42" />
-      <rect x="40" y="220" rx="0" ry="0" width="268" height="42" />
-      <rect x="40" y="270" rx="0" ry="0" width="267" height="44" />
+      <rect x="0" y="0" rx="0" ry="0" width="400" height="50" />
+      <rect x="0" y="60" rx="0" ry="0" width="400" height="150" />
+      <rect x="25" y="220" rx="0" ry="0" width="300" height="50" />
+      <rect x="25" y="280" rx="0" ry="0" width="300" height="10" />
+      <rect x="25" y="310" rx="0" ry="0" width="300" height="50" />
+      <rect x="25" y="370" rx="0" ry="0" width="300" height="50" />
+      <rect x="25" y="430" rx="0" ry="0" width="300" height="50" />
+      <rect x="25" y="490" rx="0" ry="0" width="300" height="50" />
+      <rect x="75" y="560" rx="0" ry="0" width="200" height="30" />
     </ContentLoader>
   </Widget>
 );
 
 export const ResultWidget = ({results}) => (
-  <Widget>
+  <Widget
+    as={motion.section}
+    transition={{ delay: 0, duration: 0.7 }}
+    variants={{
+      show: { opacity: 1, y: '0' },
+      hidden: { opacity: 0, y: '100%' },
+    }}
+    initial="hidden"
+    animate="show"
+  >
     <Widget.Header >
+      <BackLinkArrow href="/"/>
       Resultado
     </Widget.Header>
     <Widget.Content>
@@ -91,6 +105,7 @@ function QuestionWidget({
   return (
     <Widget>
       <Widget.Header>
+        <BackLinkArrow href="/"/>
         <h3>
           {`Pergunta ${questionIndex+1} de ${totalQuestion}`}
         </h3>
@@ -117,7 +132,7 @@ function QuestionWidget({
               onSubmit();
               setSelectedAlternative(undefined)
               setIsQuestionSubmited(false);
-            }, 3 * 1000)
+            }, 2 * 1000)
           }}
           >
           {
@@ -138,6 +153,7 @@ function QuestionWidget({
                     id={alternativeId}
                     type="radio"
                     name={questionId}
+                    checked={isSelected} 
                     onChange={() => {setSelectedAlternative(index)}}
                   />
                   {alternative}
@@ -198,7 +214,6 @@ export default function QuizPage() {
   return (
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
-        <QuizLogo />
         {
           screenState === screenStates.QUIZ && (
             <QuestionWidget 
