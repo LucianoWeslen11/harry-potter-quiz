@@ -77,6 +77,7 @@
     }
   ],
   "external": [
+	"https://brunoquiz.brunosaibert.vercel.app/",
     "https://quiz-imersao-react.olucasalves.vercel.app/",
     "https://flash-quiz-next.davidlpc1.vercel.app/",
     "https://breaking-bad-quiz.eliasnepo.vercel.app/",
